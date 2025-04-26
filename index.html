@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Verse App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="screen">
+        <img src="images/bethel_logo.png" alt="Bethel Logo" class="logo">
+        <h1 class="title">제자반</h1>
+        <h2 class="subtitle">1단계, 2단계 암송구절</h2>
+        <button id="start-button" class="button">시작하기</button>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="screen hidden">
+        <div class="verse-container">
+            <h2 id="verse-title" class="verse-title"></h2>
+            <p id="verse-reference" class="verse-reference"></p>
+            <div id="verse-text" class="verse-text"></div>
+        </div>
+        
+        <div class="controls-container">
+            <div class="random-container">
+                <input type="checkbox" id="random-checkbox">
+                <label for="random-checkbox">Random</label>
+            </div>
+            
+            <div class="buttons-container">
+                <button id="prev-button" class="nav-button">Prev</button>
+                <button id="hint-button" class="nav-button">Hint</button>
+                <button id="full-button" class="nav-button">Full</button>
+                <button id="next-button" class="nav-button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/verses.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
