@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (isHintClicked) {
             const words = verse.text.split(' ');
-            const firstTwoWords = words.length >= 2 ? 
-                `${words[0]} ${words[1]}` : 
+            const firstThreeWords = words.length >= 3 ? 
+                `${words[0]} ${words[1]} ${words[2]}` : 
                 words.length === 1 ? words[0] : '';
             
-            verseText.textContent = firstTwoWords;
+            verseText.textContent = firstThreeWords;
         }
         
         if (isShowClicked) {
